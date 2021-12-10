@@ -1,0 +1,60 @@
+:root {
+  --col-1: #dad1c3;
+  --col-2: #fac238ff;
+  --col-3: #ffe85cff;
+  --col-4: rgb(76, 141, 47);
+  --col-5: #114b17ff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  height:  100%;
+  width: 100%;
+}
+
+.header {
+  background-image: linear-gradient(to right, var(--col-1), transparent), url("../img/header-bkg.jpg");
+  background-size: cover;
+  background-position: bottom 50% right 25%;
+  border:rgb(76, 141, 47);
+  border-width: 5px;
+  color: var(--col-5) !important;
+  height: 18rem;
+  position: relative;
+  left: 0;
+  top: 0;
+  /* 3456 2304 */
+
+}
+
+.header h1 {
+  margin: 1em 0.5em;
+  position: absolute;
+  bottom: 20px;
+}
+
+main {
+  background: linear-gradient(150deg, var(--col-1), 70%, var(--col-3)), fixed; 
+  height: calc(100% - 18rem);
+}
+
+.main-contain {
+  width: clamp(100px, 80vw, 1000px);
+  height: 100%;
+  overflow: scroll;
+  margin-top: -25px;
+}
+
+.main-topspacer {
+  height: 25px;
+  background: linear-gradient(to bottom, rgb(218, 209, 195, 0.8),transparent);
+  position: sticky;
+}
+
+
+
+
